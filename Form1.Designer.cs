@@ -47,7 +47,6 @@ namespace obrazkitest
             this.kometa = new System.Windows.Forms.Button();
             this.galaktyka = new System.Windows.Forms.Button();
             this.jowisz = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liczbaProbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,9 +56,10 @@ namespace obrazkitest
             this.lp30 = new System.Windows.Forms.ToolStripMenuItem();
             this.kasujRekordyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyjscieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.obrazek)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // obrazek
@@ -67,10 +67,9 @@ namespace obrazkitest
             this.obrazek.BackColor = System.Drawing.Color.Black;
             this.obrazek.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("obrazek.BackgroundImage")));
             this.obrazek.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.obrazek.Location = new System.Drawing.Point(95, 69);
-            this.obrazek.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.obrazek.Location = new System.Drawing.Point(71, 56);
             this.obrazek.Name = "obrazek";
-            this.obrazek.Size = new System.Drawing.Size(400, 369);
+            this.obrazek.Size = new System.Drawing.Size(300, 300);
             this.obrazek.TabIndex = 0;
             this.obrazek.TabStop = false;
             // 
@@ -81,10 +80,10 @@ namespace obrazkitest
             this.start.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.start.Font = new System.Drawing.Font("Georgia", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.start.ForeColor = System.Drawing.Color.Gainsboro;
-            this.start.Location = new System.Drawing.Point(27, 828);
+            this.start.Location = new System.Drawing.Point(19, 610);
             this.start.Margin = new System.Windows.Forms.Padding(0);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(540, 65);
+            this.start.Size = new System.Drawing.Size(405, 53);
             this.start.TabIndex = 1;
             this.start.Text = "start";
             this.start.UseVisualStyleBackColor = false;
@@ -101,10 +100,9 @@ namespace obrazkitest
             this.labelstart.BackColor = System.Drawing.Color.Transparent;
             this.labelstart.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelstart.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelstart.Location = new System.Drawing.Point(265, 218);
-            this.labelstart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelstart.Location = new System.Drawing.Point(199, 177);
             this.labelstart.Name = "labelstart";
-            this.labelstart.Size = new System.Drawing.Size(63, 69);
+            this.labelstart.Size = new System.Drawing.Size(50, 56);
             this.labelstart.TabIndex = 2;
             this.labelstart.Text = "3";
             // 
@@ -119,10 +117,9 @@ namespace obrazkitest
             this.licznikczasu.BackColor = System.Drawing.Color.Black;
             this.licznikczasu.Font = new System.Drawing.Font("Georgia", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.licznikczasu.ForeColor = System.Drawing.Color.Gainsboro;
-            this.licznikczasu.Location = new System.Drawing.Point(156, 457);
-            this.licznikczasu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.licznikczasu.Location = new System.Drawing.Point(117, 371);
             this.licznikczasu.Name = "licznikczasu";
-            this.licznikczasu.Size = new System.Drawing.Size(264, 54);
+            this.licznikczasu.Size = new System.Drawing.Size(210, 43);
             this.licznikczasu.TabIndex = 3;
             this.licznikczasu.Text = "czas: 00.00";
             // 
@@ -132,10 +129,9 @@ namespace obrazkitest
             this.minimalny.BackColor = System.Drawing.Color.Black;
             this.minimalny.Font = new System.Drawing.Font("Georgia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.minimalny.ForeColor = System.Drawing.Color.Gainsboro;
-            this.minimalny.Location = new System.Drawing.Point(36, 34);
-            this.minimalny.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.minimalny.Location = new System.Drawing.Point(27, 28);
             this.minimalny.Name = "minimalny";
-            this.minimalny.Size = new System.Drawing.Size(165, 29);
+            this.minimalny.Size = new System.Drawing.Size(130, 23);
             this.minimalny.TabIndex = 4;
             this.minimalny.Text = "rekord: 00.00";
             // 
@@ -145,10 +141,9 @@ namespace obrazkitest
             this.sredni.BackColor = System.Drawing.Color.Black;
             this.sredni.Font = new System.Drawing.Font("Georgia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sredni.ForeColor = System.Drawing.Color.Gainsboro;
-            this.sredni.Location = new System.Drawing.Point(337, 34);
-            this.sredni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sredni.Location = new System.Drawing.Point(253, 28);
             this.sredni.Name = "sredni";
-            this.sredni.Size = new System.Drawing.Size(160, 29);
+            this.sredni.Size = new System.Drawing.Size(127, 23);
             this.sredni.TabIndex = 5;
             this.sredni.Text = "średni: 00.00";
             // 
@@ -162,7 +157,7 @@ namespace obrazkitest
             this.dziura.Location = new System.Drawing.Point(0, 0);
             this.dziura.Margin = new System.Windows.Forms.Padding(0);
             this.dziura.Name = "dziura";
-            this.dziura.Size = new System.Drawing.Size(228, 70);
+            this.dziura.Size = new System.Drawing.Size(150, 45);
             this.dziura.TabIndex = 6;
             this.dziura.Text = "czarna dziura";
             this.dziura.UseVisualStyleBackColor = false;
@@ -175,10 +170,10 @@ namespace obrazkitest
             this.zorza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.zorza.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.zorza.ForeColor = System.Drawing.Color.Gainsboro;
-            this.zorza.Location = new System.Drawing.Point(228, 142);
+            this.zorza.Location = new System.Drawing.Point(150, 90);
             this.zorza.Margin = new System.Windows.Forms.Padding(0);
             this.zorza.Name = "zorza";
-            this.zorza.Size = new System.Drawing.Size(228, 70);
+            this.zorza.Size = new System.Drawing.Size(150, 45);
             this.zorza.TabIndex = 7;
             this.zorza.Text = "zorza polarna";
             this.zorza.UseVisualStyleBackColor = false;
@@ -191,10 +186,10 @@ namespace obrazkitest
             this.slonce.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.slonce.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.slonce.ForeColor = System.Drawing.Color.Gainsboro;
-            this.slonce.Location = new System.Drawing.Point(228, 213);
+            this.slonce.Location = new System.Drawing.Point(150, 135);
             this.slonce.Margin = new System.Windows.Forms.Padding(0);
             this.slonce.Name = "slonce";
-            this.slonce.Size = new System.Drawing.Size(228, 70);
+            this.slonce.Size = new System.Drawing.Size(150, 45);
             this.slonce.TabIndex = 8;
             this.slonce.Text = "słońce";
             this.slonce.UseVisualStyleBackColor = false;
@@ -207,10 +202,10 @@ namespace obrazkitest
             this.ksiezyc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ksiezyc.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ksiezyc.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ksiezyc.Location = new System.Drawing.Point(228, 71);
+            this.ksiezyc.Location = new System.Drawing.Point(150, 45);
             this.ksiezyc.Margin = new System.Windows.Forms.Padding(0);
             this.ksiezyc.Name = "ksiezyc";
-            this.ksiezyc.Size = new System.Drawing.Size(228, 70);
+            this.ksiezyc.Size = new System.Drawing.Size(150, 45);
             this.ksiezyc.TabIndex = 9;
             this.ksiezyc.Text = "księżyc";
             this.ksiezyc.UseVisualStyleBackColor = false;
@@ -223,10 +218,10 @@ namespace obrazkitest
             this.ziemia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ziemia.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ziemia.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ziemia.Location = new System.Drawing.Point(228, 0);
+            this.ziemia.Location = new System.Drawing.Point(150, 0);
             this.ziemia.Margin = new System.Windows.Forms.Padding(0);
             this.ziemia.Name = "ziemia";
-            this.ziemia.Size = new System.Drawing.Size(228, 70);
+            this.ziemia.Size = new System.Drawing.Size(150, 45);
             this.ziemia.TabIndex = 10;
             this.ziemia.Text = "ziemia";
             this.ziemia.UseVisualStyleBackColor = false;
@@ -239,10 +234,10 @@ namespace obrazkitest
             this.kometa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.kometa.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.kometa.ForeColor = System.Drawing.Color.Gainsboro;
-            this.kometa.Location = new System.Drawing.Point(0, 213);
+            this.kometa.Location = new System.Drawing.Point(0, 135);
             this.kometa.Margin = new System.Windows.Forms.Padding(0);
             this.kometa.Name = "kometa";
-            this.kometa.Size = new System.Drawing.Size(228, 70);
+            this.kometa.Size = new System.Drawing.Size(150, 45);
             this.kometa.TabIndex = 11;
             this.kometa.Text = "kometa";
             this.kometa.UseVisualStyleBackColor = false;
@@ -255,10 +250,10 @@ namespace obrazkitest
             this.galaktyka.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.galaktyka.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.galaktyka.ForeColor = System.Drawing.Color.Gainsboro;
-            this.galaktyka.Location = new System.Drawing.Point(0, 71);
+            this.galaktyka.Location = new System.Drawing.Point(0, 45);
             this.galaktyka.Margin = new System.Windows.Forms.Padding(0);
             this.galaktyka.Name = "galaktyka";
-            this.galaktyka.Size = new System.Drawing.Size(228, 70);
+            this.galaktyka.Size = new System.Drawing.Size(150, 45);
             this.galaktyka.TabIndex = 13;
             this.galaktyka.Text = "galaktyka";
             this.galaktyka.UseVisualStyleBackColor = false;
@@ -271,38 +266,14 @@ namespace obrazkitest
             this.jowisz.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.jowisz.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.jowisz.ForeColor = System.Drawing.Color.Gainsboro;
-            this.jowisz.Location = new System.Drawing.Point(0, 142);
+            this.jowisz.Location = new System.Drawing.Point(0, 90);
             this.jowisz.Margin = new System.Windows.Forms.Padding(0);
             this.jowisz.Name = "jowisz";
-            this.jowisz.Size = new System.Drawing.Size(228, 70);
+            this.jowisz.Size = new System.Drawing.Size(150, 45);
             this.jowisz.TabIndex = 12;
             this.jowisz.Text = "jowisz";
             this.jowisz.UseVisualStyleBackColor = false;
             this.jowisz.Click += new System.EventHandler(this.jowisz_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.dziura, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.zorza, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.slonce, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.ksiezyc, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.ziemia, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.kometa, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.jowisz, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.galaktyka, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(67, 528);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(456, 284);
-            this.tableLayoutPanel1.TabIndex = 14;
             // 
             // menuStrip1
             // 
@@ -312,8 +283,8 @@ namespace obrazkitest
             this.opcjeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(593, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(445, 24);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -325,7 +296,7 @@ namespace obrazkitest
             this.wyjscieToolStripMenuItem});
             this.opcjeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.opcjeToolStripMenuItem.Name = "opcjeToolStripMenuItem";
-            this.opcjeToolStripMenuItem.Size = new System.Drawing.Size(62, 26);
+            this.opcjeToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.opcjeToolStripMenuItem.Text = "Opcje";
             // 
             // liczbaProbToolStripMenuItem
@@ -338,7 +309,7 @@ namespace obrazkitest
             this.lp30});
             this.liczbaProbToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.liczbaProbToolStripMenuItem.Name = "liczbaProbToolStripMenuItem";
-            this.liczbaProbToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.liczbaProbToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.liczbaProbToolStripMenuItem.Text = "Liczba prób";
             // 
             // lp8
@@ -349,7 +320,7 @@ namespace obrazkitest
             this.lp8.CheckState = System.Windows.Forms.CheckState.Checked;
             this.lp8.ForeColor = System.Drawing.SystemColors.Control;
             this.lp8.Name = "lp8";
-            this.lp8.Size = new System.Drawing.Size(108, 26);
+            this.lp8.Size = new System.Drawing.Size(86, 22);
             this.lp8.Text = "8";
             this.lp8.Click += new System.EventHandler(this.lp8_Click);
             // 
@@ -359,7 +330,7 @@ namespace obrazkitest
             this.lp10.CheckOnClick = true;
             this.lp10.ForeColor = System.Drawing.SystemColors.Control;
             this.lp10.Name = "lp10";
-            this.lp10.Size = new System.Drawing.Size(108, 26);
+            this.lp10.Size = new System.Drawing.Size(86, 22);
             this.lp10.Text = "10";
             this.lp10.Click += new System.EventHandler(this.lp10_Click);
             // 
@@ -369,7 +340,7 @@ namespace obrazkitest
             this.lp16.CheckOnClick = true;
             this.lp16.ForeColor = System.Drawing.SystemColors.Control;
             this.lp16.Name = "lp16";
-            this.lp16.Size = new System.Drawing.Size(108, 26);
+            this.lp16.Size = new System.Drawing.Size(86, 22);
             this.lp16.Text = "16";
             this.lp16.Click += new System.EventHandler(this.lp16_Click);
             // 
@@ -379,7 +350,7 @@ namespace obrazkitest
             this.lp30.CheckOnClick = true;
             this.lp30.ForeColor = System.Drawing.SystemColors.Control;
             this.lp30.Name = "lp30";
-            this.lp30.Size = new System.Drawing.Size(108, 26);
+            this.lp30.Size = new System.Drawing.Size(86, 22);
             this.lp30.Text = "30";
             this.lp30.Click += new System.EventHandler(this.lp30_Click);
             // 
@@ -388,7 +359,7 @@ namespace obrazkitest
             this.kasujRekordyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.kasujRekordyToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.kasujRekordyToolStripMenuItem.Name = "kasujRekordyToolStripMenuItem";
-            this.kasujRekordyToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.kasujRekordyToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.kasujRekordyToolStripMenuItem.Text = "Kasuj Rekordy";
             this.kasujRekordyToolStripMenuItem.Click += new System.EventHandler(this.kasujRekordyToolStripMenuItem_Click);
             // 
@@ -397,38 +368,52 @@ namespace obrazkitest
             this.wyjscieToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.wyjscieToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.wyjscieToolStripMenuItem.Name = "wyjscieToolStripMenuItem";
-            this.wyjscieToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.wyjscieToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.wyjscieToolStripMenuItem.Text = "Wyjście";
             this.wyjscieToolStripMenuItem.Click += new System.EventHandler(this.wyjscieToolStripMenuItem_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.dziura);
+            this.flowLayoutPanel1.Controls.Add(this.ziemia);
+            this.flowLayoutPanel1.Controls.Add(this.galaktyka);
+            this.flowLayoutPanel1.Controls.Add(this.ksiezyc);
+            this.flowLayoutPanel1.Controls.Add(this.jowisz);
+            this.flowLayoutPanel1.Controls.Add(this.zorza);
+            this.flowLayoutPanel1.Controls.Add(this.kometa);
+            this.flowLayoutPanel1.Controls.Add(this.slonce);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(71, 417);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(304, 181);
+            this.flowLayoutPanel1.TabIndex = 16;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(593, 985);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(445, 683);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.sredni);
             this.Controls.Add(this.minimalny);
             this.Controls.Add(this.licznikczasu);
             this.Controls.Add(this.labelstart);
-            this.Controls.Add(this.start);
             this.Controls.Add(this.obrazek);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.start);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "test czasu reakcji";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.obrazek)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,7 +437,6 @@ namespace obrazkitest
         private System.Windows.Forms.Button kometa;
         private System.Windows.Forms.Button galaktyka;
         private System.Windows.Forms.Button jowisz;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem opcjeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem liczbaProbToolStripMenuItem;
@@ -462,6 +446,7 @@ namespace obrazkitest
         private System.Windows.Forms.ToolStripMenuItem lp30;
         private System.Windows.Forms.ToolStripMenuItem kasujRekordyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wyjscieToolStripMenuItem;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
